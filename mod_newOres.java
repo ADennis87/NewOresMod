@@ -8,10 +8,10 @@ public class mod_newOres extends BaseMod {
 	public static final Item Zircon = new ItemZircon(161).setItemName("Zircon");
 	public static final Item Ruby = new ItemRuby(162).setItemName("Ruby");
 	public static final Item BrokenHeart = new ItemBrokenHeart(163).setItemName("Broken Heart");
-	public static final Item SapphireHelmet = (new ItemArmor(164, 3, 5, 0)).setItemName("Sapphire Helmet");
-	public static final Item SapphireBody = (new ItemArmor(165, 3, 5, 0)).setItemName("Sapphire Chestplate");
-	public static final Item SapphireLegs = (new ItemArmor(166, 3, 5, 0)).setItemName("Sapphire Leggings");
-	public static final Item SapphireBoots = (new ItemArmor(167, 3, 5, 0)).setItemName("Sapphire Boots");
+	public static final Item SapphireHelmet = new ItemArmor(164, EnumArmorMaterial.DIAMOND, ModLoader.addArmor("Sapphire Helmet"), 0).setItemName("Sapphire Helmet");
+	public static final Item SapphireBody = new ItemArmor(165, EnumArmorMaterial.DIAMOND, ModLoader.addArmor("Sapphire Chestplate"), 0).setItemName("Sapphire Chestplate");
+	public static final Item SapphireLegs = new ItemArmor(166, EnumArmorMaterial.DIAMOND, ModLoader.addArmor("Sapphire Pants"), 0).setItemName("Sapphire Pants");
+	public static final Item SapphireBoots = new ItemArmor(167, EnumArmorMaterial.DIAMOND, ModLoader.addArmor("Sapphire Boots"), 0).setItemName("Sapphire Boots");
 
 
 
@@ -60,12 +60,8 @@ public class mod_newOres extends BaseMod {
 			"", "x x", "x x", Character.valueOf('x'), mod_newOres.Sapphire
 				});
 		
-		ModLoader.addArmor("SA");
 		
-		ModLoader.addName(SapphireHelmet, "Sapphire Helmet");
-		ModLoader.addName(SapphireBody, "Sapphire Chestplate");
-		ModLoader.addName(SapphireLegs, "Sapphire Pants");
-		ModLoader.addName(SapphireBoots, "Sapphire Boots");
+
 		
 		
 	}
