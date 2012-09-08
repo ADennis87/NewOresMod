@@ -3,6 +3,7 @@ package net.minecraft.src;
 import java.util.Random;
 
 public class BlockBrokenHeartOre extends Block
+
 {
 	
 	
@@ -27,10 +28,7 @@ public class BlockBrokenHeartOre extends Block
 	}
 	public void mod_BlockBrokenHeartOre()
 	{
-		ModLoader.registerBlock(mod_newOres2.BHO);
-		ModLoader.addName(mod_newOres2.BHO, "Broken Heart Ore");
-		mod_newOres2.BHO.blockIndexInTexture = ModLoader.addOverride("/terrain.png",
-				"/BrokenHeartOre.png");
+		
 						
 			
 			
